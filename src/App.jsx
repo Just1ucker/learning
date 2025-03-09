@@ -4,17 +4,22 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  return (
-    <div>
-      <header>
-        <h3>Result University</h3>
+  const fruits = ["яблоко", "банан", "апельсин"]; // начальный массив
 
-        <span>Тут будет время</span>
-      </header>
+//1) добавить грушу в конец списка и ананас в начало
+    fruits.push = ["груша"];
+    fruits.unshift = ["ананас"];
+    console.log(fruits);
 
-    <h1>Hello React !!</h1>
-      </div>
-  )
+//2) убрать яблоко из массива
+    fruits.splice(1, 1);
+    console.log(fruits);
+
+//3) отсортировать по алфавиту
+    fruits.sort();
+    console.log(fruits);
+
+    return <h1>Hello World!</h1>
 }
 
 export default App
